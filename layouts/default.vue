@@ -1,8 +1,8 @@
 <template>
-  <v-app dark>
+  <v-app>
+    <!-- 上部バーのメニュー -->
     <v-navigation-drawer
       v-model="drawer"
-      :mini-variant="miniVariant"
       :clipped="clipped"
       fixed
       app
@@ -24,6 +24,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+    <!-- 上部バー -->
     <v-app-bar
       :clipped-left="clipped"
       fixed
@@ -50,35 +51,14 @@
       </v-btn>
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
     </v-app-bar>
+　　<!-- メイン -->
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <v-navigation-drawer
-      v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
-    >
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light>
-              mdi-repeat
-            </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+    <!-- フッター -->
     <v-footer
       :absolute="!fixed"
       app
@@ -98,19 +78,29 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Top',
           to: '/'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
+          title: '事業紹介',
+          to: '/inspire'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'ブログ',
+          to: '/inspire'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'お問い合わせ',
           to: '/inspire'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: '○○税理士事務所'
     }
   }
 }
