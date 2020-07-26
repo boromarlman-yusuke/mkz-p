@@ -83,12 +83,12 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: '事業紹介',
+          title: '業務案内',
           to: '/inspire'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'ブログ',
+          title: 'プロフィール',
           to: '/inspire'
         },
         {
