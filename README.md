@@ -17,8 +17,9 @@ $ yarn start
 $ yarn generate
 
 # github pages 公開
-$ npm run build:gh-pages
-$ npm run deploy
+$ yarn build:gh-pages
+$ yarn export:gh-pages
+$ yarn deploy
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
