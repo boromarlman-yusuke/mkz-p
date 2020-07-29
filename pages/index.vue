@@ -18,22 +18,9 @@
         reverse-transition="fade-transition"
         transition="fade-transition"
       >
-        <v-sheet
-          :color="colors[i]"
-          height="100%"
-        >
-
-          <v-row
-            class="fill-height"
-            align="center"
-            justify="center"
-          >
-            <!-- <div class="display-3">{{ slide }} </div> -->
-            <div class="display-3">aiueo</div>
-          </v-row>
-
-        </v-sheet>
-      
+        <v-img :src="image[i]">
+          <div class="display-3">{{ slide }} </div>
+        </v-img>
       </v-carousel-item>
     </v-carousel>
       <v-card>
@@ -177,6 +164,12 @@
 
   @Component
   export default class index extends Vue {
+
+    private image = [
+      '/_nuxt/assets/images.jpeg',
+      '/_nuxt/assets/aaaa.jpeg',
+      '/_nuxt/assets/images.jpeg'
+    ]
 
     private colors = [
       'indigo',
