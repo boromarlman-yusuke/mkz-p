@@ -89,6 +89,9 @@
       </v-row>
       <v-row>
         <v-col>
+          <img src="~/assets/images.jpeg">
+        </v-col>
+        <v-col>
           <v-card min-height="400px">
             <v-card-title class="headline">
               税務・会計
