@@ -26,7 +26,6 @@
       <v-card>
         <v-card-title class="headline">
         </v-card-title>
-
         <v-card-text>
           <p>福井で生まれ福井で育ち育てられた税理士です。</p>
           <p>中小企業様、個人事業主様を全面的にサポートさせていただきます。</p>
@@ -34,13 +33,6 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
         </v-card-actions>
       </v-card>
       <v-card>
