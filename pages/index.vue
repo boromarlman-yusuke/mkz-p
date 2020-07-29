@@ -81,9 +81,6 @@
       </v-row>
       <v-row>
         <v-col>
-          <img src="~/assets/images.jpeg">
-        </v-col>
-        <v-col>
           <v-card min-height="400px">
             <v-card-title class="headline">
               税務・会計
@@ -110,8 +107,6 @@
                 <li>税務調査の対応</li>
                 <li>キャッシュフロー計算書の作成による管理・経営のアドバイス</li>
                 <li>(初回相談は、無料とさせていただいております。お気軽にご相談ください。)</li>
-                <li></li>
-                <li></li>
               </ul>
             </v-card-text>
           </v-card>
@@ -149,7 +144,6 @@
           </v-row>
         </v-card-text>
       </v-card>
-
     </v-flex>
   </v-layout>
 </template>
