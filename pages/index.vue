@@ -169,9 +169,9 @@
   export default class index extends Vue {
 
     private image = [
-      '/_nuxt/assets/images.jpeg',
-      '/_nuxt/assets/aaaa.jpeg',
-      '/_nuxt/assets/images.jpeg'
+      require("../assets/images.jpeg"),
+      require("../assets/aaaa.jpeg"),
+      require("../assets/images.jpeg")
     ]
 
     private colors = [
