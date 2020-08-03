@@ -75,7 +75,7 @@ export default {
         {
           icon: 'mdi-chart-bubble',
           title: 'お問い合わせ',
-          to: '/inspire'
+          to: '/form'
         }
       ],
       miniVariant: false,
