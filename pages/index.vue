@@ -19,7 +19,12 @@
         transition="fade-transition"
       >
         <v-img :src="image[i]">
-          <div class="display-3">{{ slide }} </div>
+          <v-row  
+            :align="alignment"
+            :justify="justify">
+            <div class="display-3">{{ slide }} </div>
+          </v-row>
+          <!-- https://qiita.com/ykoizumi0903/items/9a1bf871f477651817a8 -->
         </v-img>
       </v-carousel-item>
     </v-carousel>
@@ -173,3 +178,10 @@
     ]
   }
 </script>
+<style>
+.eye-catch-text {
+  display: flex;
+  justify-content: center; /*左右中央揃え*/
+  align-items: center;     /*上下中央揃え*/
+}
+</style>
