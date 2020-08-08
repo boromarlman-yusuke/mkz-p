@@ -2,25 +2,20 @@
   <v-layout>
     <v-flex class="text-center">
       <div id="app" class="container" v-cloak>
-      <Logo></Logo>
       <h2>お問い合わせ</h2>
 
       <transition-group name="fade" tag="div" mode="out-in">
-        <!-- <form
-          key="1" v-show="!submitted"
-          name="gf_form" method="POST" target="hidden_iframe"
-          :action="formdata.doc" @submit.prevent="gf_submit()">
-          <listitem v-for="(item, index) in formdata.survey" :item="item" :index="index"></listitem>
-          <button class="btn btn-primary input-group-btn btn-lg">送信する</button>        
-        </form> -->
         <form
           key="1" 
           name="gf_form" method="POST" target="hidden_iframe"
           :action="formdata.doc">
-
-          <Listitem v-for="(item, key, index) in formdata.surveys" :item="item" :index="index" :key="index"></Listitem>
-          <v-btn class="btn btn-primary input-group-btn btn-lg">送信する</v-btn>        
-        
+          <Listitem 
+            v-for="(item, key, index) in formdata.surveys" 
+            :item="item" 
+            :index="index" 
+            :key="index"
+          ></Listitem>
+          <v-btn>送信する</v-btn>        
         </form>
         <div key="2">
           <p>
