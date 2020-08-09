@@ -18,14 +18,11 @@
         reverse-transition="fade-transition"
         transition="fade-transition"
       >
-        <v-img :src="image[i]">
-          <v-row  
-            :align="alignment"
-            :justify="justify">
-            <div class="display-3">{{ slide }} </div>
-          </v-row>
-          <!-- https://qiita.com/ykoizumi0903/items/9a1bf871f477651817a8 -->
+      <v-card>
+        <v-img class="white--text" :src="image[i]">
+          <v-card-title class="align-center fill-height">{{ slide }}</v-card-title>
         </v-img>
+      </v-card>
       </v-carousel-item>
     </v-carousel>
       <v-card>
