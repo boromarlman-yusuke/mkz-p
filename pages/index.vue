@@ -18,35 +18,29 @@
         reverse-transition="fade-transition"
         transition="fade-transition"
       >
-      <v-card>
-        <v-img class="white--text" :src="image[i]">
-          <v-card-title class="align-center fill-height">{{ slide }}</v-card-title>
-        </v-img>
-      </v-card>
+        <v-card class="mx-auto">
+          <v-img class="white--text" height="300px" :src="image[i]">
+            <v-card-title class="fill-height eye-catch-text">{{ slide }}</v-card-title>
+          </v-img>
+          <v-card-text>
+            <p>福井で生まれ福井で育ち育てられた税理士です。</p>
+            <p>中小企業様、個人事業主様を全面的にサポートさせていただきます。</p>
+            <p>(対応エリア：福井県内、石川県加賀地方、その他の地域については、応談)</p>
+          </v-card-text>
+        </v-card>
       </v-carousel-item>
     </v-carousel>
-      <v-card>
-        <v-card-title class="headline">
-        </v-card-title>
-        <v-card-text>
-          <p>福井で生まれ福井で育ち育てられた税理士です。</p>
-          <p>中小企業様、個人事業主様を全面的にサポートさせていただきます。</p>
-          <p>(対応エリア：福井県内、石川県加賀地方、その他の地域については、応談)</p>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-        </v-card-actions>
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          サービスについて
-        </v-card-title>
-        <v-card-text>
-          <p>当事務所は、経営者皆様がすべき価値ある仕事に専念いただきたいと考えており、</p>
-          <p>税理士 松島和彦は元国税職員としての経験を活かし、全面的にサポート</p>
-          <p>させていただきますのでご安心ください。</p>
-        </v-card-text>
-      </v-card>
+    <v-card>
+      <v-card-title class="headline">
+        サービスについて
+      </v-card-title>
+      <v-card-text>
+        <p>当事務所は、経営者皆様がすべき価値ある仕事に専念いただきたいと考えており、</p>
+        <p>税理士 松島和彦は元国税職員としての経験を活かし、全面的にサポート</p>
+        <p>させていただきますのでご安心ください。</p>
+      </v-card-text>
+    </v-card>
+
       <v-row>
         <v-col>
           <v-card min-height="400px">
@@ -177,8 +171,6 @@
 </script>
 <style>
 .eye-catch-text {
-  display: flex;
-  justify-content: center; /*左右中央揃え*/
-  align-items: center;     /*上下中央揃え*/
+  font-size: 60px;
 }
 </style>
