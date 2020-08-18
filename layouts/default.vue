@@ -70,7 +70,7 @@ export default {
         {
           icon: 'mdi-chart-bubble',
           title: 'プロフィール',
-          to: '/inspire'
+          to: '/profile'
         },
         {
           icon: 'mdi-chart-bubble',
