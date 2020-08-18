@@ -5,6 +5,7 @@
         cycle
         hide-delimiter-background
         show-arrows-on-hover
+        id="target"
       >
         <v-carousel-item
           v-for="(slide, i) in slides"
@@ -121,6 +122,7 @@
           </v-row>
         </v-card-text>
       </v-card>
+      <nuxt-link v-scroll-to="'#target'" to="#target">TOPへ</nuxt-link>
     </v-flex>
   </v-layout>
 </template>
@@ -148,6 +150,20 @@
       'あいさつ',
       'ひとこと'
     ]
+
+    mounted() {
+      if (this.$nuxt.$route.hash) {
+      this.scrollToHash()
+      }
+    }
+
+    private scrollToHash () {
+      const hash=this.$nuxt.$route.hash
+      this.$nextTick(() => {
+        this.$scrollTo(hash, 0, { offset: -120 })
+      })
+    }
+    
   }
 </script>
 <style>
