@@ -95,31 +95,29 @@
           アクセスマップ
         </v-card-title>
         <v-card-text>
-          <v-row>
-            <v-col>
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1612.6932379118032!2d136.17780975827426!3d36.059676463337304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8bf2a9efda78b%3A0x9d76b6518811ffe1!2z54uQ5qmL5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1595750092590!5m2!1sja!2sjp"
-                width="600"
-                height="450"
-                frameborder="0"
-                style="border:0;"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0">
-              </iframe>
-            </v-col>
-            <v-col>
-              <p>お急ぎのご用件の場合は下記の電話番号におかけください。</p>
-              <p>お問い合わせフォームよりご用件を頂いた場合は、メールにて回答後、お電話を差し上げます。</p>
-              <h1>連絡先</h1>
-              <Ul>
-                <li>福井県福井市xxxxxxxxx</li>
-                <li>0123-56-7890</li>
-                <li>aaaaaaaaaaaaaaaaaaaaaa@gmail.com</li>
-                <li>FAX:(123)123-5678</li>
-              </Ul>
-            </v-col>
-          </v-row>
+          <div class="gmap">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1612.6932379118032!2d136.17780975827426!3d36.059676463337304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8bf2a9efda78b%3A0x9d76b6518811ffe1!2z54uQ5qmL5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1595750092590!5m2!1sja!2sjp"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0">
+            </iframe>
+          </div>
+          <br>
+
+          <h1>連絡先</h1>
+          <p>お急ぎのご用件の場合は下記の電話番号におかけください。</p>
+          <p>お問い合わせフォームよりご用件を頂いた場合は、メールにて回答後、お電話を差し上げます。</p>
+          <Ul>
+            <li>福井県福井市xxxxxxxxx</li>
+            <li>0123-56-7890</li>
+            <li>aaaaaaaaaaaaaaaaaaaaaa@gmail.com</li>
+            <li>FAX:(123)123-5678</li>
+          </Ul>
         </v-card-text>
       </v-card>
       <nuxt-link v-scroll-to="'#target'" to="#target">TOPへ</nuxt-link>
@@ -169,5 +167,19 @@
 <style>
 .eye-catch-text {
   font-size: 60px;
+}
+
+.gmap {
+height: 0;
+overflow: hidden;
+padding-bottom: 56.25%;
+position: relative;
+}
+.gmap iframe {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
 }
 </style>
