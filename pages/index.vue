@@ -13,11 +13,16 @@
           reverse-transition="fade-transition"
           transition="fade-transition"
         >
-          <v-card class="mx-auto">
+          <v-card
+            class="mx-auto"
+            light
+            outlined
+            elevation="0"
+          >
             <v-img class="white--text" height="300px" :src="image[i]">
               <v-card-title class="fill-height eye-catch-text">{{ slide }}</v-card-title>
             </v-img>
-            <v-card-text>
+            <v-card-text class="eye-catch-explain">
               <p>福井で生まれ福井で育ち育てられた税理士です。</p>
               <p>中小企業様、個人事業主様を全面的にサポートさせていただきます。</p>
               <p>(対応エリア：福井県内、石川県加賀地方、その他の地域については、応談)</p>
@@ -25,71 +30,117 @@
           </v-card>
         </v-carousel-item>
       </v-carousel>
-      <v-card>
-        <v-card-title class="headline">
-          サービスについて
-        </v-card-title>
-        <v-card-text>
-          <p>当事務所は、経営者皆様がすべき価値ある仕事に専念いただきたいと考えており、</p>
-          <p>税理士 松島和彦は元国税職員としての経験を活かし、全面的にサポート</p>
-          <p>させていただきますのでご安心ください。</p>
-        </v-card-text>
-      </v-card>
-      <v-card min-height="400px">
-        <v-card-title class="headline">
-          創業
-        </v-card-title>
-        <v-card-text>
-          <ul>
-            <li>創業、会社設立に関する相談、税務上のアドバイス及び届け出関係</li>
-            <li>相続・贈与・譲渡(資産税関係)</li>
-            <li>相続税の申告納税が必要かのシミュレーション</li>
-            <li>申告から納税までのスケジュールの相談</li>
-            <li>相続税申告書の作成及び申告</li>
-            <li>贈与について</li>
-            <li>贈与を行うまでの税務関係の相談(最良の贈与の仕方等、贈与を行う前に、まずはご相談ください。)</li>
-            <li>贈与税申告書の作成及び申告</li>
-            <li>資産関係の譲渡所得についての相談、申告書の作成及び申告</li>
-          </ul>
-        </v-card-text>
-      </v-card>
-      <v-card min-height="400px">
-        <v-card-title class="headline">
-          事業継承
-        </v-card-title>
-        <v-card-text>
-          <ul>
-            <li>事業承継及び事業の譲渡・買収に関する相談等</li>
-          </ul>
-        </v-card-text>
-      </v-card>
-      <v-card min-height="400px">
-        <v-card-title class="headline">
-        税務・会計
-        </v-card-title>
-        <v-card-text>
-          <ul>
-            <li>税務に関する各種申告書</li>
-            <li>届出書等の作成及び申告</li>
-            <li>経理事務の指導、記帳代行</li>
-            <li>会計、給与、システムの導入指導年末調整</li>
-            <li>償却資産の申告書作成及び申告</li>
-          </ul>
-        </v-card-text>
-      </v-card>
-      <v-card min-height="400px">
-        <v-card-title class="headline">
-          相談
-        </v-card-title>
-        <v-card-text>
-          <ul>
-            <li>税務全般に関する相談</li>
-            <li>税務調査の対応</li>
-            <li>キャッシュフロー計算書の作成による管理・経営のアドバイス</li>
-            <li>(初回相談は、無料とさせていただいております。お気軽にご相談ください。)</li>
-          </ul>
-        </v-card-text>
-      </v-card>
+
+      <h1>
+        サービスについて
+      </h1>
+      <p>当事務所は、経営者皆様がすべき価値ある仕事に専念いただきたいと考えており、</p>
+      <p>税理士 松島和彦は元国税職員としての経験を活かし、全面的にサポート</p>
+      <p>させていただきますのでご安心ください。</p>
+
+      <v-row>
+        <v-col :cols=1></v-col>
+        <v-col :cols=2>
+          <p class="tategaki">創業</p>
+        </v-col>
+        <v-col :cols=8>
+          <v-card 
+            min-height="200px"
+            shaped
+            outlined
+            elevation="0"
+          >
+            <v-card-text>
+              <ul>
+                <li>創業、会社設立に関する相談、税務上のアドバイス及び届け出関係</li>
+                <li>相続・贈与・譲渡(資産税関係)</li>
+                <li>相続税の申告納税が必要かのシミュレーション</li>
+                <li>申告から納税までのスケジュールの相談</li>
+                <li>相続税申告書の作成及び申告</li>
+                <li>贈与について</li>
+                <li>贈与を行うまでの税務関係の相談(最良の贈与の仕方等、贈与を行う前に、まずはご相談ください。)</li>
+                <li>贈与税申告書の作成及び申告</li>
+                <li>資産関係の譲渡所得についての相談、申告書の作成及び申告</li>
+              </ul>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col :cols=1></v-col>
+        <v-col :cols=8>
+          <v-card 
+            min-height="200px"
+            shaped
+            outlined
+            elevation="0"
+          >
+            <v-card-text>
+              <ul>
+                <li>税務に関する各種申告書</li>
+                <li>届出書等の作成及び申告</li>
+                <li>経理事務の指導、記帳代行</li>
+                <li>会計、給与、システムの導入指導年末調整</li>
+                <li>償却資産の申告書作成及び申告</li>
+              </ul>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col :cols=2>
+          <p class="tategaki">事業継承</p>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col :cols=1></v-col>
+        <v-col :cols=2>
+          <p class="tategaki">税務・会計</p>
+        </v-col>
+        <v-col :cols=8>
+          <v-card 
+            min-height="200px"
+            shaped
+            outlined
+            elevation="0"
+          >
+            <v-card-text>
+              <ul>
+                <li>税務に関する各種申告書</li>
+                <li>届出書等の作成及び申告</li>
+                <li>経理事務の指導、記帳代行</li>
+                <li>会計、給与、システムの導入指導年末調整</li>
+                <li>償却資産の申告書作成及び申告</li>
+              </ul>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col :cols=1></v-col>
+        <v-col :cols=8>
+          <v-card 
+            min-height="200px"
+            shaped
+            outlined
+            elevation="0"
+          >
+            <v-card-text>
+              <ul>
+                <li>税務全般に関する相談</li>
+                <li>税務調査の対応</li>
+                <li>キャッシュフロー計算書の作成による管理・経営のアドバイス</li>
+                <li>(初回相談は、無料とさせていただいております。お気軽にご相談ください。)</li>
+              </ul>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col :cols=2>
+          <p class="tategaki">相談</p>
+        </v-col>
+      </v-row>
+
       <v-card>
         <v-card-title>
           アクセスマップ
@@ -169,12 +220,17 @@
   font-size: 60px;
 }
 
+.eye-catch-explain {
+  color: gray !important;
+}
+
 .gmap {
 height: 0;
 overflow: hidden;
 padding-bottom: 56.25%;
 position: relative;
 }
+
 .gmap iframe {
 position: absolute;
 left: 0;
@@ -182,4 +238,12 @@ top: 0;
 height: 100%;
 width: 100%;
 }
+
+.tategaki {
+  writing-mode:vertical-rl;
+  font-size: 3rem;
+  color: #9E9245;
+  font-family: "serif";
+}
+
 </style>
