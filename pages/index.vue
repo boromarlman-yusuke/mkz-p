@@ -243,7 +243,7 @@ width: 100%;
   writing-mode:vertical-rl;
   font-size: 3rem;
   color: #9E9245;
-  font-family: "serif";
+  font-family: 'Noto Serif JP', serif;
 }
 
 </style>
